@@ -2,6 +2,10 @@ import commerce from '@lib/api/commerce'
 import { Layout } from '@components/common'
 import { ProductCard } from '@components/product'
 import { Grid, Marquee, Hero } from '@components/ui'
+import Image from 'next/image'
+import background from '../public/pursuitBackground.jpg'
+import logo from '../public/pursuitLogoBlackLetter.png'
+
 // import HomeAllProductsGrid from '@components/common/HomeAllProductsGrid'
 import type { GetStaticPropsContext, InferGetStaticPropsType } from 'next'
 
@@ -40,7 +44,28 @@ export default function Home({
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <>
-      <Grid variant="filled">
+      <div
+        style={{
+          width: '50%',
+          margin: 'auto',
+          position: 'absolute',
+          left: '25%',
+          top: '15%',
+          zIndex: 1,
+        }}
+      >
+        <Image src={logo} layout="responsive" />
+      </div>
+      <div
+        style={{
+          margin: 'auto',
+          position: 'relative',
+        }}
+      >
+        <Image src={background} layout="responsive" />
+      </div>
+
+      {/* <Grid variant="filled">
         {products.slice(0, 3).map((product: any, i: number) => (
           <ProductCard
             key={product.id}
@@ -51,17 +76,17 @@ export default function Home({
             }}
           />
         ))}
-      </Grid>
-      <Marquee variant="secondary">
+      </Grid> */}
+      {/* <Marquee variant="secondary">
         {products.slice(0, 3).map((product: any, i: number) => (
           <ProductCard key={product.id} product={product} variant="slim" />
         ))}
-      </Marquee>
+      </Marquee> */}
       <Hero
-        headline=" Dessert dragée halvah croissant."
-        description="Cupcake ipsum dolor sit amet lemon drops pastry cotton candy. Sweet carrot cake macaroon bonbon croissant fruitcake jujubes macaroon oat cake. Soufflé bonbon caramels jelly beans. Tiramisu sweet roll cheesecake pie carrot cake. "
+        headline="Pursuit brings you guided outdoor adventures"
+        description="Pursuit provides vetted, community-reviewed outdoor activities with optional guides and real-time availability on public and private land. What more could you ask for?"
       />
-      <Grid layout="B" variant="filled">
+      {/* <Grid layout="B" variant="filled">
         {products.slice(0, 3).map((product: any, i: number) => (
           <ProductCard
             key={product.id}
@@ -77,7 +102,7 @@ export default function Home({
         {products.slice(3).map((product: any, i: number) => (
           <ProductCard key={product.id} product={product} variant="slim" />
         ))}
-      </Marquee>
+      </Marquee> */}
       {/* <HomeAllProductsGrid
         newestProducts={products}
         categories={categories}

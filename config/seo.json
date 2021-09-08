@@ -1,26 +1,26 @@
 {
-  "title": "ACME Storefront | Powered by Next.js Commerce",
-  "titleTemplate": "%s - ACME Storefront",
-  "description": "Next.js Commerce - https://www.nextjs.org/commerce",
+  "title": "Pursuit Outside",
+  "titleTemplate": "%s - Find your adventure",
+  "description": "Pursuit Outside - https://pursuitoutside.com",
   "openGraph": {
-    "title": "ACME Storefront | Powered by Next.js Commerce",
-    "description": "Next.js Commerce - https://www.nextjs.org/commerce",
+    "title": "Pursuit Outside",
+    "description": "Pursuit Outside - https://pursuitoutside.com",
     "type": "website",
     "locale": "en_IE",
-    "url": "https://nextjs.org/commerce",
-    "site_name": "Next.js Commerce",
+    "url": "https://pursuitoutside.com",
+    "site_name": "Pursuit Outside",
     "images": [
       {
-        "url": "/card.png",
+        "url": "/pursuitLogoBlackLetter.png",
         "width": 800,
         "height": 600,
-        "alt": "Next.js Commerce"
+        "alt": "Pursuit Outside"
       }
     ]
   },
   "twitter": {
-    "handle": "@nextjs",
-    "site": "@nextjs",
+    "handle": "@pursuitoutside",
+    "site": "@pursuitoutside",
     "cardType": "summary_large_image"
   }
 }
